@@ -12,6 +12,12 @@ export const Row = styled.div`
     transform: translate(0, 23vh);
 `
 
+export const Header = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+`
+
 export const Left = styled.div`
     display: flex;
 
@@ -43,7 +49,7 @@ export const Right = styled.div`
     align-items: center;
     justify-content: center;
 
-    width: 200px;
+    width: 220px;
     height: 320px;
 
     background: #f7f9fa;
@@ -84,4 +90,9 @@ export const Prices = styled.div`
     font-size: 15px;
 
     color: #6999d6;
+`
+
+export const SpanRow = styled.div`
+    display: flex;
+    flex-direction: column;
 `
