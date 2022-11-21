@@ -21,6 +21,10 @@ function Box() {
         }
     }, [amount, installments, mdr])
 
+    const formatCents = (cents) => {
+        return (parseInt(cents) / 100).toFixed(2).replace(".", ",")
+    }
+
     return (
         <Row>
             <Left>
@@ -35,10 +39,10 @@ function Box() {
                     <hr></hr>
                 </Header>
                 <Prices>
-                    <SpanRow><span>Amanhã: </span><Bold>R$ {(response) ? response.data["1"] : "0"},00</Bold></SpanRow>
-                    <SpanRow><span>Em 15 dias: </span><Bold>R$ {(response) ? response.data["15"] : "0"},00</Bold></SpanRow>
-                    <SpanRow><span>Em 30 dias: </span><Bold>R$ {(response) ? response.data["30"] : "0"},00</Bold></SpanRow>
-                    <SpanRow><span>Em 90 dias: </span><Bold>R$ {(response) ? response.data["90"] : "0"},00</Bold></SpanRow>
+                    <SpanRow><span>Amanhã: </span><Bold>R$ {(response) ? formatCents(response.data["1"]) : "0"}</Bold></SpanRow>
+                    <SpanRow><span>Em 15 dias: </span><Bold>R$ {(response) ? formatCents(response.data["15"]) : "0"}</Bold></SpanRow>
+                    <SpanRow><span>Em 30 dias: </span><Bold>R$ {(response) ? formatCents(response.data["30"]) : "0"}</Bold></SpanRow>
+                    <SpanRow><span>Em 90 dias: </span><Bold>R$ {(response) ? formatCents(response.data["90"]) : "0"}</Bold></SpanRow>
                 </Prices>
             </Right>
         </Row>
