@@ -10,6 +10,11 @@ export const Row = styled.div`
     margin: auto;
 
     transform: translate(0, 23vh);
+
+    @media screen and (max-width: 540px) {
+        flex-direction: column;
+        transform: translate(0, 0);
+    }
 `
 
 export const Header = styled.div`
@@ -41,6 +46,10 @@ export const Left = styled.div`
         margin-bottom: 5px;
         color: #656565;
     }
+
+    @media screen and (max-width: 540px) {
+        width: 100vw;
+    }
 `
 
 export const Right = styled.div`
@@ -69,6 +78,10 @@ export const Right = styled.div`
         height: 1px;
         background-color: #4279bd;
         border: none;
+    }
+
+    @media screen and (max-width: 540px) {
+        width: 100vw;
     }
 `
 
