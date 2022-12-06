@@ -15,6 +15,6 @@ export const GlobalStyle = createGlobalStyle`
         list-style: none;
     }
     body {
-        background: #f5f7fa;
+        background: #ebebeb;
     }
-`
+`;

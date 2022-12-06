@@ -4,10 +4,10 @@ export const Vertical = styled.div`
     display: flex;
     flex-direction: column;
     gap: 5px;
-`
+`;
 
 export const Title = styled.span`
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 13px;
     color: #666666;
 `;
@@ -15,7 +15,7 @@ export const Title = styled.span`
 export const Input = styled.input`
     width: 230px;
     height: 30px !important;
-    
+
     padding: 7px;
     border: solid 1px #b2b2b2;
     outline: none !important;
@@ -24,6 +24,4 @@ export const Input = styled.input`
     :focus {
         border: solid 1px #2596be;
     }
-
-
-`
+`;

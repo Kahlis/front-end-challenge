@@ -15,13 +15,13 @@ export const Row = styled.div`
         flex-direction: column;
         transform: translate(0, 0);
     }
-`
+`;
 
 export const Header = styled.div`
     display: flex;
     flex-direction: column;
     gap: 5px;
-`
+`;
 
 export const Left = styled.div`
     display: flex;
@@ -40,7 +40,7 @@ export const Left = styled.div`
 
     h1 {
         margin-right: 45px;
-        font-family: 'Inter', sans-serif;
+        font-family: "Inter", sans-serif;
         font-weight: 600;
         font-size: 16px;
         margin-bottom: 5px;
@@ -50,7 +50,7 @@ export const Left = styled.div`
     @media screen and (max-width: 540px) {
         width: 100vw;
     }
-`
+`;
 
 export const Right = styled.div`
     display: flex;
@@ -65,7 +65,7 @@ export const Right = styled.div`
     gap: 15px;
 
     h2 {
-        font-family: 'Inter', sans-serif;
+        font-family: "Inter", sans-serif;
         font-weight: 600;
         font-size: 15px;
         font-style: italic;
@@ -83,13 +83,13 @@ export const Right = styled.div`
     @media screen and (max-width: 540px) {
         width: 100vw;
     }
-`
+`;
 
 export const Bold = styled.span`
     font-weight: 600;
     font-size: 16px !important;
     color: #4279bd !important;
-`
+`;
 
 export const Prices = styled.div`
     display: flex;
@@ -98,14 +98,24 @@ export const Prices = styled.div`
     justify-content: Left;
     width: 150px;
     gap: 15px;
+    padding-bottom: 45px;
 
     font-style: italic;
     font-size: 15px;
 
     color: #6999d6;
-`
+`;
 
 export const SpanRow = styled.div`
     display: flex;
     flex-direction: column;
-`
+`;
+
+export const StyledButton = styled.button`
+    height: 30px;
+    width: 100px;
+    margin-right: 130px;
+    background: #4279bd;
+    border: none;
+    color: white;
+`;
