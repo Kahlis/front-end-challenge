@@ -37,7 +37,7 @@ function Home() {
 			installments === undefined ||
 			mdr === undefined
 		) {
-			toast.error("Todos os campos são obrigatórios");
+			toast.error("Todos os campos com asterisco são obrigatórios");
 		} else if (amount < 1000) {
 			toast.error("O valor da venda deve ser maior ou igual a 1.000");
 		} else if (installments > 12 || installments < 0) {
