@@ -66,7 +66,7 @@ function Home() {
 						amount: amount,
 						installments: installments,
 						mdr: mdr,
-						days: daysRequest,
+						days: daysRequest.sort(),
 					}),
 					{
 						pending: "Calculando...",
